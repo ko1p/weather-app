@@ -1,0 +1,5 @@
+export const SHOW_INFO = "SHOW_INFO"
+export const ADD_CURRENT_WEATHER = "ADD_CURRENT_WEATHER"
+export const ADD_NEXT_DAYS_WEATHER = "ADD_NEXT_DAYS_WEATHER"
+export const SHOW_ERROR = "SHOW_ERROR"
+export const HIDE_ERROR = "HIDE_ERROR"

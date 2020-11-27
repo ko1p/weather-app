@@ -1,0 +1,86 @@
+.wi {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wi-100 {
+    width: 85px;
+    height: 100px;
+}
+
+.wi-200 {
+    width: 170px;
+    height: 200px;
+}
+
+.icon-01d {
+    background-image: url("./01d.svg");
+}
+
+.icon-01n {
+    background-image: url("./01n.svg");
+}
+
+.icon-02d {
+    background-image: url("./02d.svg");
+}
+
+.icon-02n {
+    background-image: url("./02n.svg");
+}
+
+.icon-03d {
+    background-image: url("./03d.svg");
+}
+
+.icon-03n {
+    background-image: url("./03n.svg");
+}
+
+.icon-04d {
+    background-image: url("./04d.svg");
+}
+
+.icon-04n {
+    background-image: url("./04n.svg");
+}
+
+.icon-09d {
+    background-image: url("./09d.svg");
+}
+
+.icon-09n {
+    background-image: url("./09n.svg");
+}
+
+.icon-10d {
+    background-image: url("./10d.svg");
+}
+
+.icon-10n {
+    background-image: url("./10n.svg");
+}
+
+.icon-11d {
+    background-image: url("./11d.svg");
+}
+
+.icon-11n {
+    background-image: url("./11n.svg");
+}
+
+.icon-13d {
+    background-image: url("./13d.svg");
+}
+
+.icon-13n {
+    background-image: url("./13n.svg");
+}
+
+.icon-50d {
+    background-image: url("./50d.svg");
+}
+
+.icon-50n {
+    background-image: url("./50n.svg");
+}

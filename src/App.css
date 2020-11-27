@@ -1,1 +1,258 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.weather {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.weather__form {
+    margin: 0;
+}
+
+.weather__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+}
+
+.wheather__input {
+    font-family: Roboto Slab, Tahoma, sans-serif;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    height: 40px;
+    width: 450px;
+}
+
+.wheather__error {
+    width: 550px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheather__error-message {
+    color: red;
+    font-size: 13px;
+    text-align: center;
+}
+
+.wheather-now {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(167px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.wheather__date {
+    display: flex;
+    flex-direction: column;
+}
+
+.wheather__min-max-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    align-self: center;
+}
+
+.wheather__conditions {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wheather__current-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.wheather__description {
+    align-items: center;
+}
+
+.wheather__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheather__city {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 45px;
+    grid-column: 1 / 3;
+}
+
+.next-days {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.next-days__card {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+    .weather {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wheather-now {
+        grid-template-columns: 1fr;
+
+    }
+    .wheather__city {
+        grid-column: 1;
+    }
+
+    .wheather__city {
+        justify-content: center;
+    }
+
+    .wheather__conditions {
+        align-items: center;
+    }
+
+    .next-days {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .weather {
+        width: 90%;
+    }
+
+    .weather__title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .wheather__input {
+        height: 20px;
+        font-size: 15px;
+    }
+
+    .wheather__error {
+        width: 90%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wheather-now {
+        grid-template-columns: 1fr;
+
+    }
+
+    .wheather__city {
+        grid-column: 1;
+    }
+
+    .wheather__city {
+        justify-content: center;
+    }
+
+    .wheather__conditions {
+        align-items: center;
+    }
+
+    .next-days {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .weather {
+        width: 90%;
+    }
+
+    .weather__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .wheather__input {
+        width: 100%;
+        height: 20px;
+        font-size: 15px;
+    }
+
+    .wheather__error {
+        width: 90%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wheather-now {
+        grid-template-columns: 1fr;
+
+    }
+
+    .wheather__city {
+        font-size: 25px;
+        grid-column: 1;
+    }
+
+    .wheather__min-max-temp {
+        font-size: 20px;
+    }
+
+    .wheather__conditions {
+        font-size: 18px;
+    }
+
+    .wheather__current-temp {
+        font-size: 20px;
+    }
+
+    .wheather__city {
+        justify-content: center;
+    }
+
+    .wheather__conditions {
+        align-items: center;
+    }
+
+    .next-days {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    }
+
+    .next-days__card {
+        font-size: 20px;
+    }
+}
