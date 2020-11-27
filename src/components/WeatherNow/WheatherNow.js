@@ -18,7 +18,7 @@ class WheatherNow extends Component {
         return dd + '.' + mm + '.' + yy;
     }
 
-    getWeekDayNow() { // TODO переделать
+    getWeekDayNow() {
         const date = new Date(Date.now())
         const days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 

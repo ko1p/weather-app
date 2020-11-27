@@ -4,7 +4,6 @@ import {ADD_CURRENT_WEATHER, HIDE_ERROR, SHOW_ERROR, SHOW_INFO} from "../actionT
 export function showCurrentWeather(city) {
     return async dispatch => {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c7b4a7dde572193b07f91ad6ea1a10b1&units=metric&lang=ru`
-        // TODO спрятать ключ
         try {
             const res = await axios.get(url)
             dispatch(hideError())

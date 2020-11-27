@@ -5,7 +5,7 @@ import '../../images/icons/icons.css'
 class NextDays extends Component {
 
     getWeekDays(timeStamp) {
-        const date = new Date(timeStamp * 1000) // TODO DRY
+        const date = new Date(timeStamp * 1000)
         const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
         return days[date.getDay()];
     }
