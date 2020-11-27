@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/roboto-slab-v12-latin_cyrillic-regular.eot');
+  src: local(''),
+  url('./fonts/roboto-slab-v12-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/roboto-slab-v12-latin_cyrillic-regular.woff2') format('woff2'),
+  url('./fonts/roboto-slab-v12-latin_cyrillic-regular.woff') format('woff'),
+  url('./fonts/roboto-slab-v12-latin_cyrillic-regular.ttf') format('truetype'),
+  url('./fonts/roboto-slab-v12-latin_cyrillic-regular.svg#RobotoSlab') format('svg');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: -apple-system, "Roboto Slab", BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
