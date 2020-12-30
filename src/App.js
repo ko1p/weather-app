@@ -1,8 +1,7 @@
 import './App.css';
-import {useState} from 'react'
-import {useDispatch, useSelector} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux';
 import Weather from "./components/Weather/Weather";
-import {showCurrentWeather} from "./store/actions/showCurrentWeather";
+import {setInputCity, showCurrentWeather} from "./store/actions/showCurrentWeather";
 import {showNextDaysWeather} from "./store/actions/showNextDaysWeather";
 
 function App() {
@@ -12,19 +11,17 @@ function App() {
         }
     })
 
-    const dispatch = useDispatch()
-
-    const [inputState, setInputState] = useState('')
+    const dispatch = useDispatch();
 
     function onSubmitHandler(e) {
-        e.preventDefault()
-        const city = inputState
-        dispatch(showCurrentWeather(city))
-        dispatch(showNextDaysWeather(city))
+        e.preventDefault();
+        const city = state.weather.inputCity;
+        dispatch(showCurrentWeather(city));
+        dispatch(showNextDaysWeather(city));
     }
 
     function onChangeInputHandler(e) {
-        setInputState(e.target.value)
+        dispatch(setInputCity(e.target.value));
     }
 
 
@@ -34,7 +31,7 @@ function App() {
             <form className="weather__form" onSubmit={(e) => onSubmitHandler(e)}>
                 <label className="weather__label" htmlFor="wheather__input">
                     <input className="wheather__input" type="text" id="wheather__input"
-                           onChange={e => onChangeInputHandler(e)} value={inputState}
+                           onChange={e => onChangeInputHandler(e)} value={state.weather.inputCity}
                            placeholder="Введите город"/>
                 </label>
             </form>

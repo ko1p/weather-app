@@ -1,4 +1,5 @@
 export const initialState = {
     isOpen: false,
-    hasError: false
+    hasError: false,
+    input: null
 }

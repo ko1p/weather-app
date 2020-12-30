@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {ADD_CURRENT_WEATHER, HIDE_ERROR, SHOW_ERROR, SHOW_INFO} from "../actionTypes";
+import {ADD_CURRENT_WEATHER, HIDE_ERROR, SET_INPUT_CITY, SHOW_ERROR, SHOW_INFO} from "../actionTypes";
 
 export function showCurrentWeather(city) {
     return async dispatch => {
@@ -38,5 +38,12 @@ function showError() {
 function hideError() {
     return {
         type: HIDE_ERROR
+    }
+}
+
+export function setInputCity(input) {
+    return {
+        type: SET_INPUT_CITY,
+        payload: input
     }
 }
